@@ -1,0 +1,16 @@
+<h1>Contac Us</h1>
+
+<address>
+Avenida siempre viva 135
+</address>
+
+<%= form_for @welcome, url: ruta_path, method: :post do |f| %>
+
+    <div>
+        <%= f.label "Nombre de la casilla" %>
+        <%= f.label :name %>
+
+        <%= f.text_field :name %>
+    </div>
+<% end %>
+
